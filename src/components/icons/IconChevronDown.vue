@@ -1,0 +1,6 @@
+<!-- src/components/icons/IconChevronDown.vue -->
+<template>
+  <svg width="16" height="10" viewBox="0 2 16 10" fill="#FD5725" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 1.5L8 8.5L15 1.5" stroke="#FD5725" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</template>
