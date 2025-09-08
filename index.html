@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/Bullion_TestApp/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bullion App</title>
+    <script>
+      (function() {
+        const redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.pathname) {
+          // Menggunakan history.replaceState agar URL berubah tanpa reload
+          // dan Vue Router bisa mengambil alih.
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+
+    <script type="module" crossorigin src="/Bullion_TestApp/assets/index-C9Upg53I.js"></script>
+    <link rel="stylesheet" crossorigin href="/Bullion_TestApp/assets/index-ByLr4LeV.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>

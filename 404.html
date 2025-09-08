@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+      // 1. Simpan path yang salah (misal: /Bullion_TestApp/login) ke sessionStorage
+      sessionStorage.redirect = window.location.pathname;
+
+      // 2. Arahkan browser ke root halaman GitHub Pages Anda
+      //    Path ini harus sama dengan 'base' di vite.config.js
+      window.location.href = '/Bullion_TestApp/';
+    </script>
+  </head>
+  <body>
+    <!-- Kosongkan saja -->
+  </body>
+</html>
