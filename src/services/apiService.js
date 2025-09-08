@@ -46,13 +46,18 @@ export const userService = {
     return apiClient.get(`/api/v1/admin/${id}`);
   },
 
+  /**
+   * Mengupdate data pengguna.
+   * @param {string|number} id - ID pengguna yang akan diupdate.
+   * @param {object} userData - Data baru pengguna dalam format objek JavaScript.
+   * @returns {Promise}
+   */
   updateUser(id, userData) {
-    // =======================================================
-    // PERBAIKAN KRUSIAL DI SINI: Hapus `/update` dari URL
-    // =======================================================
-    userData.append('_method', 'PUT'); 
-    return apiClient.post(`/api/v1/admin/${id}`, userData, { // <-- URL yang benar
-      headers: { 'Content-Type': 'multipart/form-data' },
+    // ====================================================================
+    // PERUBAHAN KRUSIAL: Menggunakan method PUT dan mengirim JSON
+    // ====================================================================
+    return apiClient.put(`/api/v1/admin/${id}/update`, userData, { // <-- Method PUT dan URL yang benar
+      headers: { 'Content-Type': 'application/json' }, // <-- Content-Type JSON
     });
   },
   
