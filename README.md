@@ -35,19 +35,17 @@ Form Edit
 
 
 Teknologi yang Digunakan
-Framework: Vue.js 3 (Composition API)
-Build Tool: Vite
-Routing: Vue Router
-HTTP Client: Axios
-Styling: CSS Murni (Scoped)
-Linting & Formatting: ESLint & Prettier
+- Framework: Vue.js 3 (Composition API)
+- Build Tool: Vite
+- Routing: Vue Router
+- HTTP Client: Axios
+- Styling: CSS
 
 
 
-Prasyarat
-Sebelum memulai, pastikan Anda telah menginstal:
-Node.js (versi ^20.19.0 atau >=22.12.0 direkomendasikan)
-npm (biasanya terinstal bersama Node.js)
+Prasyarat sebelum memulai, pastikan Anda telah menginstal:
+1. Node.js (versi ^20.19.0 atau >=22.12.0 direkomendasikan)
+2. npm (biasanya terinstal bersama Node.js)
 
 
 
@@ -62,8 +60,8 @@ Aplikasi akan tersedia di http://localhost:5173 (atau port lain jika 5173 sudah 
 
 
 Akun Admin untuk Testing
-Email: admin@email.com
-Password: admin123
+- Email: admin@email.com
+- Password: admin123
 
 
 Struktur Proyek
