@@ -1,4 +1,3 @@
-<!-- src/components/icons/IconEye.vue -->
 <template>
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle cx="12" cy="11.5" r="2.5" stroke="#FD5725" stroke-width="1.5"/>

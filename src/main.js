@@ -2,7 +2,8 @@ import { createApp } from 'vue'
 import { createPinia } from 'pinia' // Jika Anda menginstal Pinia
 
 import App from './App.vue'
-import router from './router' // <-- PASTIKAN baris ini ada
+import router from './router'
+import '@/assets/css/globals.css'
 
 const app = createApp(App)
 
